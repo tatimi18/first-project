@@ -20,7 +20,7 @@
         width: 43% //337px
         max-width: 337px
         display: flex
-        flex-wrap: wrap
+        //flex-wrap: wrap
         justify-content: space-between
         align-items: center
         &__footer
@@ -46,4 +46,39 @@
     &__link
         text-decoration: none
         color: $black-color
+
+@media (max-width: 1040px)
+    .main-contacts__info
+        width: 55%
+    .main-contacts__logo-info
+        width: 18%
+
+@media (max-width: 569px)
+    .main-contacts__logo-info 
+        width: 32%
+        flex-direction: column
+    .main-contacts__logo-title
+        font-size: 1.5rem
+    .main-contacts__info
+        width: 61%
+
+@media (max-width: 501px)
+    .main-contacts
+        margin-top: 53px
+    .main-contacts__info
+        height: 75px
+        flex-direction: column
+        align-items: flex-end
+    .navbar__ul 
+        flex-direction: column
+        align-items: center
+
+    .navbar__li
+        padding-top: 20px
+
+@media (max-width: 319px)
+    .main-contacts__logo-info
+        width: 41%
+    .main__navbar
+        padding: 2.7% 2.7% 7% 2.7%
 

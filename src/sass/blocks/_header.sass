@@ -8,6 +8,64 @@
         max-width: 447px
     &__li
         list-style-type: none
+        font-weight: 400
+        font-size: 0.875rem //14px
+        line-height: 1rem //16px
+        color: $dark-color
     &__link
         text-decoration: none
         color: $dark-color
+
+@media (max-width: 501px)
+    .header
+        padding: 1.5315% 0//17px 0
+        &__ul
+            padding: 87px 0 25px
+            position: fixed
+            top: -100% //чтобы меню находилось над страницей
+            right: 0
+            width: 100%
+            height: 45vh //высота на 45% видимого простраинства
+            flex-direction: column
+            align-items: center
+            z-index: 51
+            transition: 0.6s all
+            background-color: #b4b4b4
+            &_active
+                top: 0 //меню сьезжает вниз
+        &__li
+                font-size: 1.6rem
+
+        &__burger
+                display: block
+                position: fixed
+                width: 100%
+                height: 60px
+                top: 0
+                left: 0
+                z-index: 52
+                background-color: $gray-color
+                &-wrapper
+                    position: absolute
+                    right: 1rem
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 2.5rem
+                    //height: 5% **//для срабатывания в момент клика пользователем**
+                &__item
+                    display: block
+                    margin-bottom: 0.4rem
+                    height: 0.2rem
+                    width: 100%
+                    background-color: $accent-color
+                    transition: 0.6s all //добавляем плавность крестику
+                &_active
+                    .header__burger__item
+                        margin-bottom: -0.2rem //убираем смещение, установленное ранее
+                        &:first-child
+                            transform: translateY(3px) rotate(-45deg)
+                        &:nth-child(2)
+                            display: none
+                        &:last-child
+                            transform: translateY(3px) rotate(45deg)
+

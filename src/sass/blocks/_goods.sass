@@ -44,7 +44,7 @@
         padding-top: 7.568% //84px
         display: flex
         justify-content: space-between
-        flex-wrap: wrap
+        //flex-wrap: wrap
 
 .card
     margin-top: 1.44144% //16px
@@ -81,3 +81,37 @@
         font-size: 0.875rem //14px
         line-height: 1rem //16px
         color: #C4C4C4
+
+
+@media (max-width: 1070px)
+    .goods__cards-wrapper
+        flex-direction: column
+        align-items: center
+    .goods__items-wrapper
+        justify-content: space-around
+
+@media (max-width: 540px)
+    .goods__item
+        margin: 1%
+        padding: 3.5%
+    .goods__icon
+        display: none
+    .goods__title
+        padding-bottom: 4%
+    .card
+        width: 97%
+        height: 170px
+        margin-top: 5.44144%
+
+@media (max-width: 430px)
+    .card
+        height: 186px
+        padding: 6.15315% 3.604%
+    .card__img
+        display: none
+    .goods__item
+        margin-top: 3%
+
+@media (max-width: 319px)
+
+
