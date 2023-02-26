@@ -129,7 +129,7 @@
                             <p class="card__title">Получайте бонусы и подарки</p>
                             <p class="card__descr">Каждый месяц разыгрываем<br>
                                 10 000 рублей для наших клиентов</p>
-                            <input type="email" class="card__email-input" placeholder="Введите e-mail">
+                            <input type="email" class="card__email-input" placeholder="Введите e-mail" onfocus="if (this.placeholder == 'Введите e-mail') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите e-mail';}">
                         </div>
                         <img src="icons/subscribe/subscribe_envelope.svg" alt="subscribe_envelope" class="card__img">
                     </div>
